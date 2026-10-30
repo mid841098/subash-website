@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subash P | AI & Data Science Engineer | Multi-Agent Systems & Cybersecurity</title>
+  <meta name="description" content="Portfolio of Subash P - B.Tech AI & Data Science student at Chennai Institute of Technology. Specializing in Multi-Agent AI Systems, Machine Learning, and Cyber Security.">
+  <meta name="keywords" content="Subash P, AI Engineer, Multi-Agent Systems, Data Science, Machine Learning, Cybersecurity, FastAPI, Flask, Gemini API, Chennai Institute of Technology">
+  <meta name="author" content="Subash P">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Subash P | AI & Data Science Portfolio">
+  <meta property="og:description" content="Explore multi-agent automation systems, machine learning models, cybersecurity projects, and interactive demos.">
+  <meta property="og:image" content="assets/subash.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="subpage">
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Subash P Home">
+        <span class="brand-code">&lt;</span>
+        <span class="brand-name">Subash.P</span>
+        <span class="brand-code">/&gt;</span>
+        <span class="status-indicator" title="Available for opportunities"></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html" class="nav-link"><i class="fa-regular fa-user"></i> About</a>
+        <a href="skills.html" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a>
+        <a href="projects.html" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+        <a href="index.html#terminal-section" class="nav-link terminal-badge-link"><i class="fa-solid fa-terminal"></i> Terminal</a>
+        <a href="experience.html" class="nav-link active"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        <a href="contact.html" class="nav-link"><i class="fa-regular fa-envelope"></i> Contact</a>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="nav-actions">
+        <!-- Audio FX Toggle -->
+        <button id="sound-toggle" class="btn-icon" title="Toggle UI sound effects" aria-label="Toggle UI Sound Effects">
+          <i class="fa-solid fa-volume-xmark" id="sound-icon"></i>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" title="Switch Theme (Dark/Light)" aria-label="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Resume Action Button -->
+        <a href="contact.html" class="btn btn-primary nav-cta">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Hire Me</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-content">
+      <a href="index.html" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="about.html" class="mobile-link"><i class="fa-regular fa-user"></i> About</a>
+      <a href="skills.html" class="mobile-link"><i class="fa-solid fa-microchip"></i> Skills</a>
+      <a href="projects.html" class="mobile-link"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="index.html#terminal-section" class="mobile-link"><i class="fa-solid fa-terminal"></i> Interactive Terminal</a>
+      <a href="experience.html" class="mobile-link active"><i class="fa-solid fa-briefcase"></i> Experience &amp; Education</a>
+      <a href="contact.html" class="mobile-link"><i class="fa-regular fa-envelope"></i> Contact</a>
+      <div class="mobile-socials">
+        <a href="https://github.com/Subash13-alt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/subash-p-bb01b1382/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:subash2007prakash@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+917598520950" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Track Record</span>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-subtitle">Verified professional internships, academic credentials, and institutional leadership roles.</p>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <div class="timeline-card card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-primary">Industry Internship</span>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> May 2026 – Jun 2026</span>
+              </div>
+              <h3 class="timeline-title">Cyber Security Intern</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Codec Technologies Pvt. Ltd.</h4>
+              <p class="timeline-desc">
+                Completed an intensive, government-recognized 1-month cyber security internship program accredited by
+                <strong>AICTE</strong> and <strong>ICAC</strong>, officially listed on the <strong>National Internship Portal</strong>.
+                Conducted vulnerability assessments, defensive threat modeling, and security testing routines.
+              </p>
+              <div class="timeline-tags">
+                <span>AICTE Approved</span>
+                <span>ICAC Certified</span>
+                <span>National Internship Portal</span>
+                <span>Threat Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="timeline-card card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-success">Internship</span>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> May 2026 – Jun 2026</span>
+              </div>
+              <h3 class="timeline-title">Cyber Security Intern</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Thiranex</h4>
+              <p class="timeline-desc">
+                Successfully executed cyber defensive auditing, threat mitigation strategies, and system hardening practices.
+                Received a verified certificate of achievement following the completion of final security assessments.
+              </p>
+              <div class="timeline-tags">
+                <span>Verified Certificate</span>
+                <span>Network Defense</span>
+                <span>Security Hardening</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="timeline-card card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-info">Virtual Programs</span>
+                <span class="timeline-date"><i class="fa-solid fa-certificate"></i> Specialized Training</span>
+              </div>
+              <h3 class="timeline-title">Virtual Intern</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-award"></i> Eduskills</h4>
+              <p class="timeline-desc">
+                Completed selective virtual internship tracks covering:
+                <strong>AI-ML by Google for Developers</strong> (machine learning foundations, neural pipelines, and scalable modeling)
+                and <strong>Ethical Hacking by Eduskills Academy</strong> (penetration fundamentals, reconnaissance, and defensive protocols).
+              </p>
+              <div class="timeline-tags">
+                <span>Google for Developers AI-ML</span>
+                <span>Ethical Hacking Academy</span>
+                <span>Applied Modeling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item -->
+          <div class="timeline-item">
+            <div class="timeline-node node-edu">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-card card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-badge badge-warning">Undergraduate Degree</span>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Sep 2025 – May 2029</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-university"></i> Chennai Institute of Technology</h4>
+              <p class="timeline-location"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</p>
+              <p class="timeline-desc">
+                Major in <strong>Artificial Intelligence and Data Science</strong>. Deep coursework in Multi-Agent Reasoning,
+                Machine Learning Algorithms, Advanced Data Structures in C++, Database Management Systems, Probability & Statistics, and Computer Networks.
+              </p>
+              <div class="timeline-tags">
+                <span>AI & Data Science</span>
+                <span>CIT Chennai</span>
+                <span>Sep 2025 – May 2029</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> Recognition</span>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="section-subtitle">Credentials from global technology organizations and competitive hackathon rankings.</p>
+        </div>
+
+        <!-- Certifications Gallery -->
+        <h3 class="subsection-heading"><i class="fa-solid fa-certificate text-accent"></i> Industry Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card card-glass">
+            <div class="cert-logo cisco-logo"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="cert-info">
+              <h4>Python Essentials 1</h4>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+              <span class="cert-tag">Programming</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-glass">
+            <div class="cert-logo cisco-logo"><i class="fa-solid fa-code"></i></div>
+            <div class="cert-info">
+              <h4>Python Essentials 2</h4>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+              <span class="cert-tag">Advanced OOP</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-glass">
+            <div class="cert-logo cisco-logo"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="cert-info">
+              <h4>Introduction to Cybersecurity</h4>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+              <span class="cert-tag">Cyber Defense</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-glass">
+            <div class="cert-logo cisco-logo"><i class="fa-solid fa-database"></i></div>
+            <div class="cert-info">
+              <h4>Introduction to Data Science</h4>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+              <span class="cert-tag">Data Analytics</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-glass">
+            <div class="cert-logo cisco-logo"><i class="fa-solid fa-brain"></i></div>
+            <div class="cert-info">
+              <h4>Introduction to Modern AI</h4>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+              <span class="cert-tag">Artificial Intelligence</span>
+            </div>
+          </div>
+
+          <div class="cert-card card-glass">
+            <div class="cert-logo aws-logo"><i class="fa-brands fa-aws"></i></div>
+            <div class="cert-info">
+              <h4>Cloud Practitioner Essentials</h4>
+              <p class="cert-issuer">Amazon Web Services (AWS)</p>
+              <span class="cert-tag">Cloud Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements & Competitions -->
+        <h3 class="subsection-heading mt-large"><i class="fa-solid fa-trophy text-amber"></i> Competitive Honors & Hackathons</h3>
+        <div class="achieve-grid">
+          <div class="achieve-card card-glass highlight-winner">
+            <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="achieve-content">
+              <h4>Semifinalist – ET-AI Hackathon 2026</h4>
+              <p>Recognized as a semifinalist in the high-stakes national Emerging Technologies & AI Hackathon 2026 for building cutting-edge multi-agent software solutions.</p>
+              <span class="achieve-pill">Semifinalist Top Tier</span>
+            </div>
+          </div>
+
+          <div class="achieve-card card-glass">
+            <div class="achieve-icon"><i class="fa-solid fa-code-commit"></i></div>
+            <div class="achieve-content">
+              <h4>500+ Solved LeetCode Problems</h4>
+              <p>Consistent algorithmic problem-solving across Dynamic Programming, Graph Theory, Trees, Greedy algorithms, and Advanced Data Structures in C++ & Python.</p>
+              <span class="achieve-pill">Algorithmic Mastery</span>
+            </div>
+          </div>
+
+          <div class="achieve-card card-glass">
+            <div class="achieve-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="achieve-content">
+              <h4>Sustainable Hackathon 2026</h4>
+              <p>Competed in the international Sustainable Hackathon 2026 hosted by <strong>Canadian University Dubai</strong>, creating green tech & resource management software.</p>
+              <span class="achieve-pill">International Competitor</span>
+            </div>
+          </div>
+
+          <div class="achieve-card card-glass">
+            <div class="achieve-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="achieve-content">
+              <h4>Student Hackpad 2026 & DevFusion 2.0</h4>
+              <p>Active participant in Student Hackpad 2026 and DevFusion 2.0 – The Developers Hackathon, organized by Enginow, rapidly prototyping full-stack AI web apps.</p>
+              <span class="achieve-pill">Developer Hackathons</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Volunteer Leadership Experience -->
+        <h3 class="subsection-heading mt-large"><i class="fa-solid fa-hand-holding-heart text-purple"></i> Volunteer & Campus Leadership</h3>
+        <div class="volunteer-grid">
+          <div class="vol-card card-glass">
+            <div class="vol-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <div>
+              <h4>Content Writer – Coffee House</h4>
+              <p class="vol-sub">Literature Club of Chennai Institute of Technology</p>
+              <p class="vol-text">Authoring literary pieces, technical write-ups, and creative showcases for university-wide publications.</p>
+            </div>
+          </div>
+
+          <div class="vol-card card-glass">
+            <div class="vol-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div>
+              <h4>Research & Innovation Team Member</h4>
+              <p class="vol-sub">Entrepreneurship and Development Cell (EDC), CIT</p>
+              <p class="vol-text">Analyzing market readiness, incubation roadmaps, and emerging AI technologies for collegiate student startup ventures.</p>
+            </div>
+          </div>
+
+          <div class="vol-card card-glass">
+            <div class="vol-icon"><i class="fa-solid fa-cubes"></i></div>
+            <div>
+              <h4>Active Member – Web3 Madras Community</h4>
+              <p class="vol-sub">Regional Tech Ecosystem</p>
+              <p class="vol-text">Engaging in decentralized technology discussions, developer workshops, and open-source community meetups.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT SECTION -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="index.html" class="footer-brand">
+          <span class="brand-code">&lt;</span>
+          <span class="brand-name">Subash.P</span>
+          <span class="brand-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline">AI &amp; Data Science Undergrad • Chennai Institute of Technology</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#terminal-section">Terminal</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/Subash13-alt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/subash-p-bb01b1382/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:subash2007prakash@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+917598520950" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Subash P. All rights reserved.</p>
+        <p class="built-with">
+          Designed with modern CSS, glassmorphism &amp; interactive agent simulator.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<!-- FLOATING QUICK ACCESS BUTTONS -->
+  <div class="floating-controls">
+    <button id="back-to-top" class="floating-btn" title="Back to top" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- PROJECT DEEP-DIVE MODAL -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-card card-glass">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div id="modal-content" class="modal-body">
+        <!-- Injected via JavaScript based on selected project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div id="resume-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-card card-glass resume-modal-card">
+      <div class="resume-modal-header">
+        <div class="resume-header-title">
+          <i class="fa-solid fa-file-invoice text-accent"></i>
+          <h3>Subash P — Verified Resume Overview</h3>
+        </div>
+        <div class="resume-modal-actions">
+          <button class="btn btn-outline btn-sm" id="print-resume-btn"><i class="fa-solid fa-print"></i> Print</button>
+          <button class="modal-close" id="resume-close-btn" aria-label="Close Resume Modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body resume-body" id="resume-printable-area">
+        <!-- Rendered Resume content matching original resume structure -->
+        <div class="resume-doc">
+          <div class="resume-header">
+            <h2>SUBASH P</h2>
+            <div class="resume-contacts">
+              <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subash-p-bb01b1382/" target="_blank">Subash P</a></span> • 
+              <span><strong>GitHub:</strong> <a href="https://github.com/Subash13-alt" target="_blank">Subash13-alt</a></span> • 
+              <span><strong>Email:</strong> subash2007prakash@gmail.com</span> • 
+              <span><strong>Phone:</strong> +91 7598520950</span>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">EDUCATION</h4>
+            <div class="resume-item-row">
+              <span class="inst"><strong>Chennai Institute of Technology</strong></span>
+              <span class="dates">Sep 2025 – May 2029</span>
+            </div>
+            <div class="resume-item-row">
+              <span class="degree">Bachelor of Technology in Artificial Intelligence and Data Science</span>
+              <span class="loc">Chennai, Tamil Nadu</span>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">PROJECTS</h4>
+            
+            <div class="resume-proj">
+              <p class="proj-head"><strong>Terminal AutoPilot Pro – Agentic AI Terminal Automation</strong> | <em>Python, FastAPI, Gemini API, JavaScript</em></p>
+              <ul>
+                <li>Built a multi-agent AI system with Planner, Safety, Command, Executor, Verification, Reflection, and Memory agents that converts natural-language goals into validated terminal workflows.</li>
+                <li>Implemented a safety layer with low, medium, and high risk levels that blocks dangerous commands (e.g., <code>rm -rf</code>, <code>shutdown</code>), and an executor using subprocess with log capture and status codes.</li>
+                <li>Added a self-healing reflection loop (Gemini API) that analyzes failures and suggests fixes, with JSON workflow memory.</li>
+              </ul>
+            </div>
+
+            <div class="resume-proj">
+              <p class="proj-head"><strong>CreditSense AI – Credit Risk Assessment System</strong> | <em>Python, Flask, scikit-learn, pandas, NumPy, JavaScript</em></p>
+              <ul>
+                <li>Developed a web application that classifies loan applicants as Low Risk or High Risk with a confidence score, using a scikit-learn pipeline served through a Flask API (<code>/predict</code>, <code>/metrics</code>).</li>
+                <li>Compared Logistic Regression, Decision Tree, and Random Forest models; the auto-selected Random Forest achieved <strong>89.25% accuracy</strong> and <strong>85.52% F1 score</strong> on a held-out 20% test split of a synthetic dataset.</li>
+                <li>Built a responsive frontend with an animated risk gauge, input validation, dark mode, and a live model-performance panel.</li>
+              </ul>
+            </div>
+
+            <div class="resume-proj">
+              <p class="proj-head"><strong>WaterWise ML – Smart Water Leak Detection System</strong> | <em>Python, Flask, SQLAlchemy, scikit-learn, Chart.js, Bootstrap</em></p>
+              <ul>
+                <li>Built a full-stack monitoring platform that uses Isolation Forest for anomaly detection and Linear Regression for next-hour and next-day usage prediction across multiple water zones.</li>
+                <li>Implemented a rule-based and ML alert engine (high flow, leak, night usage, budget alerts) with real-time Server-Sent Events, a live dashboard with anomaly heatmap, budget planner, and zone health scores, backed by a 20+ endpoint REST API and SQLite.</li>
+              </ul>
+            </div>
+
+            <div class="resume-proj">
+              <p class="proj-head"><strong>MeetingOS – Meeting-to-Execution AI Workflow System</strong> | <em>Python, FastAPI, spaCy, SQLite, JavaScript</em></p>
+              <ul>
+                <li>Built an offline NLP pipeline using spaCy and dateparser that extracts tasks, owners, deadlines, and priorities from unstructured meeting notes.</li>
+                <li>Designed a multi-agent backend with escalation, audit, and decision agents for SLA monitoring, overdue-task escalation, workload analysis, and an audit trail in SQLite, plus a single-page analytics dashboard.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">EXPERIENCE</h4>
+            <div class="resume-exp">
+              <div class="resume-item-row">
+                <span><strong>Cyber Security Intern – Codec Technologies Pvt. Ltd.</strong></span>
+                <span>May 2026 – Jun 2026</span>
+              </div>
+              <ul>
+                <li>Completed a 1-month AICTE and ICAC approved cyber security internship program listed on the National Internship Portal.</li>
+              </ul>
+            </div>
+
+            <div class="resume-exp">
+              <div class="resume-item-row">
+                <span><strong>Cyber Security Intern – Thiranex</strong></span>
+                <span>May 2026 – Jun 2026</span>
+              </div>
+              <ul>
+                <li>Successfully completed a 1-month cyber security internship and received a verified certificate of achievement.</li>
+              </ul>
+            </div>
+
+            <div class="resume-exp">
+              <div class="resume-item-row">
+                <span><strong>Virtual Intern – Eduskills</strong></span>
+                <span>Completed</span>
+              </div>
+              <ul>
+                <li>Completed virtual internship courses: AI-ML by Google for Developers and Ethical Hacking by Eduskills Academy.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">TECHNICAL SKILLS</h4>
+            <p><strong>Languages:</strong> Python, C++, JavaScript, HTML, CSS, SQL.</p>
+            <p><strong>Frameworks & Libraries:</strong> Flask, FastAPI, SQLAlchemy, Pydantic, Bootstrap, Chart.js, pandas, NumPy.</p>
+            <p><strong>AI / ML:</strong> scikit-learn, spaCy, Google Gemini API, Random Forest, Isolation Forest, Logistic Regression, Linear Regression, Decision Tree, NLP, Multi-Agent Systems.</p>
+            <p><strong>Databases & Tools:</strong> SQLite, REST APIs, JSON, Git, GitHub, Server-Sent Events, Uvicorn, Gunicorn.</p>
+            <p><strong>Core Areas:</strong> Cyber Security, Ethical Hacking, Data Science, Machine Learning, Cloud Fundamentals.</p>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">CERTIFICATIONS</h4>
+            <div class="resume-certs-cols">
+              <div>
+                <p>• Python Essentials 1 – Cisco</p>
+                <p>• Python Essentials 2 – Cisco</p>
+                <p>• Cloud Practitioner Essentials – AWS</p>
+              </div>
+              <div>
+                <p>• Introduction to Cybersecurity – Cisco</p>
+                <p>• Introduction to Data Science – Cisco</p>
+                <p>• Introduction to Modern AI – Cisco</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">ACHIEVEMENTS</h4>
+            <ul>
+              <li>Semifinalist in ET-AI Hackathon 2026; solved 500+ problems on LeetCode.</li>
+              <li>Participated in Student Hackpad 2026 and Sustainable Hackathon 2026 – Canadian University Dubai.</li>
+              <li>Participated in DevFusion 2.0 – The Developers Hackathon, organized by Enginow.</li>
+            </ul>
+          </div>
+
+          <div class="resume-section">
+            <h4 class="resume-sec-title">VOLUNTEER EXPERIENCE</h4>
+            <ul>
+              <li><strong>Content Writer</strong> – Coffee House (Literature Club of Chennai Institute of Technology).</li>
+              <li><strong>Research and Innovation Team Member</strong> – Entrepreneurship and Development Cell, EDC (Chennai Institute of Technology).</li>
+              <li><strong>Member</strong> – Web3 Madras Community.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -36,7 +36,7 @@ A modern, high-performance portfolio website built for **Subash P**, an Artifici
    - Volunteer & leadership roles (Coffee House CIT, EDC CIT, Web3 Madras).
 
 6. **Interactive Contact & Dispatch**
-   - Direct cards with 1-click clipboard copy (`subash2007prakash@gmail.com` and `+91 7598520950`) and direct profiles for GitHub (`@Subash13-alt`), LinkedIn (`subash-p-bb01b1382`), X / Twitter (`@SubashP187236`), and Reddit (`u/Initial_Pin439`).
+   - Direct cards with 1-click clipboard copy (`subash2007prakash@gmail.com` and `+91 7598520950`) and direct profiles for GitHub (`@Subash13-alt`) and LinkedIn (`subash-p-bb01b1382`).
    - Working interactive contact form that compiles inquiries into prefilled email dispatches.
 
 7. **Theme Switcher & Web Audio FX**
@@ -50,14 +50,19 @@ A modern, high-performance portfolio website built for **Subash P**, an Artifici
 
 ```
 d:\subash website\
-├── index.html          # Semantic HTML5 structure with SEO & OpenGraph meta tags
+├── index.html          # Main landing: Hero, Terminal AutoPilot Simulator & Partitions Grid
+├── about.html          # Partition 1: Background, CIT Chennai B.Tech & Leadership
+├── skills.html         # Partition 2: Interactive Technical Skills Matrix with live search
+├── projects.html       # Partition 3: Flagship Projects with category filters & deep-dive modals
+├── experience.html     # Partition 4: Career timeline, Cisco/AWS certs & hackathon honors
+├── contact.html        # Partition 5: Direct channels, 1-click clipboard copy & dispatch form
 ├── README.md           # Documentation & deployment guide
 ├── assets\
 │   └── subash.jpg      # Professional portrait photo
 ├── css\
-│   └── style.css       # Responsive CSS with custom variables, animations & glassmorphism
+│   └── style.css       # Unified responsive CSS, glassmorphism, animations & partition layout
 └── js\
-    └── main.js         # Interactive engine (terminal, canvas, sound FX, filters, modal)
+    └── main.js         # Unified engine (terminal, canvas, sound FX, filters, modal, routing)
 ```
 
 ---

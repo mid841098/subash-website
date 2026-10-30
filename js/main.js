@@ -390,8 +390,6 @@ document.addEventListener('DOMContentLoaded', () => {
 • <strong>Phone</strong>    : <a href="tel:+917598520950" class="term-yellow">+91 7598520950</a>
 • <strong>LinkedIn</strong> : <a href="https://www.linkedin.com/in/subash-p-bb01b1382/" target="_blank" class="term-cyan">linkedin.com/in/subash-p-bb01b1382</a>
 • <strong>GitHub</strong>   : <a href="https://github.com/Subash13-alt" target="_blank" class="term-cyan">github.com/Subash13-alt</a>
-• <strong>X / Twitter</strong>: <a href="https://x.com/SubashP187236" target="_blank" class="term-cyan">@SubashP187236</a>
-• <strong>Reddit</strong>    : <a href="https://www.reddit.com/user/Initial_Pin439/" target="_blank" class="term-cyan">u/Initial_Pin439</a>
 • <strong>Location</strong> : Chennai, Tamil Nadu, India`,
 
       whoami: `
@@ -935,7 +933,7 @@ subash (AI & Data Science Undergrad @ CIT Chennai | 500+ LeetCode | Multi-Agent 
           }
         }
 
-        // Active link spy
+        // Active link spy for on-page hash links
         this.sections.forEach(sec => {
           const top = sec.offsetTop - 120;
           const height = sec.offsetHeight;
@@ -943,13 +941,31 @@ subash (AI & Data Science Undergrad @ CIT Chennai | 500+ LeetCode | Multi-Agent 
 
           if (scrollY >= top && scrollY < top + height) {
             this.navLinks.forEach(link => {
-              link.classList.remove('active');
-              if (link.getAttribute('href') === `#${id}`) {
-                link.classList.add('active');
+              const href = link.getAttribute('href');
+              if (href && href.startsWith('#')) {
+                link.classList.remove('active');
+                if (href === `#${id}`) {
+                  link.classList.add('active');
+                }
               }
             });
           }
         });
+      });
+
+      // Highlight active link by current HTML page file
+      const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+      this.navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentFile || (currentFile === '' && href === 'index.html')) {
+          link.classList.add('active');
+        }
+      });
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentFile || (currentFile === '' && href === 'index.html')) {
+          link.classList.add('active');
+        }
       });
 
       // Back-to-top click
@@ -1022,13 +1038,17 @@ subash (AI & Data Science Undergrad @ CIT Chennai | 500+ LeetCode | Multi-Agent 
         term.scrollIntoView({ behavior: 'smooth' });
         const input = document.getElementById('terminal-input');
         if (input) setTimeout(() => input.focus(), 500);
+      } else {
+        window.location.href = 'index.html#terminal-section';
       }
     } else if (e.key === 'p' || e.key === 'P') {
       const proj = document.getElementById('projects');
       if (proj) proj.scrollIntoView({ behavior: 'smooth' });
+      else window.location.href = 'projects.html';
     } else if (e.key === 'c' || e.key === 'C') {
       const cont = document.getElementById('contact');
       if (cont) cont.scrollIntoView({ behavior: 'smooth' });
+      else window.location.href = 'contact.html';
     } else if (e.key === 'r' || e.key === 'R') {
       ResumeController.open();
     }
